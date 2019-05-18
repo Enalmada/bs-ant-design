@@ -1,17 +1,37 @@
 /* last checked v3.10 */
 [%bs.raw {|require("antd/lib/layout/style")|}];
 
-[@bs.module] [@react.component]
-external make:
-  (
-    ~hasSider: bool=?,
-    ~id: string=?,
-    ~className: string=?,
-    ~style: ReactDOMRe.Style.t=?,
-    ~children: React.element=?
-  ) =>
-  React.element =
-  "antd/lib/layout";
+module Layout = {
+  [@bs.obj]
+  external makePropsLayout:
+    (
+      ~hasSider: bool=?,
+      ~id: string=?,
+      ~className: string=?,
+      ~style: ReactDOMRe.Style.t=?,
+      ~children: React.element=?,
+      unit
+    ) =>
+    _ =
+    "";
+
+  [@bs.module]
+  external reactComponent: React.component('a) = "antd/lib/layout";
+
+  [@react.component]
+  let make =
+      (
+        ~hasSider: option(bool)=?,
+        ~id: option(string)=?,
+        ~className: option(string)=?,
+        ~style: option(ReactDOMRe.Style.t)=?,
+        ~children: option(React.element)=?,
+      ) =>
+    React.createElement(
+      reactComponent,
+      makePropsLayout(~hasSider?, ~id?, ~className?, ~style?, ~children?, ()),
+    );
+};
 
 /*
  className	container className	string	-
@@ -141,4 +161,3 @@ module Sider = {
       ),
     );
 };
-let make = make;

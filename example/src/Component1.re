@@ -25,6 +25,7 @@ type components = [
   | `form
   | `grid
   | `input
+  | `layout
   | `modal
   | `pageheader
   | `pagination
@@ -58,6 +59,7 @@ let varToComp = var =>
   | `form => <Form />
   | `grid => <Grid />
   | `input => <Input />
+  | `layout => <Layout />
   | `modal => <Modal />
   | `pageheader => <PageHeader />
   | `pagination => <Pagination />
@@ -90,6 +92,7 @@ let comps = [|
   `form,
   `grid,
   `input,
+  `layout,
   `modal,
   `pageheader,
   `pagination,
