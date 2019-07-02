@@ -44,6 +44,7 @@ external makePropsInput:
     ~autoComplete: string=?,
     ~allowClear: bool=?,
     ~className: string=?,
+    ~name: string=?,
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
     unit
@@ -78,6 +79,7 @@ let make =
       ~autoComplete: option(string)=?,
       ~allowClear: option(bool)=?,
       ~className: option(string)=?,
+      ~name: option(string)=?,
       ~style: option(ReactDOMRe.Style.t)=?,
       ~children: option(React.element)=?,
     ) =>
@@ -106,6 +108,7 @@ let make =
       ~autoComplete?,
       ~allowClear?,
       ~className?,
+      ~name?,
       ~style?,
       ~children?,
       (),
@@ -190,6 +193,7 @@ module Search = {
       ~autoComplete: string=?,
       ~allowClear: bool=?,
       ~className: string=?,
+      ~name: string=?,
       ~style: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
       unit
