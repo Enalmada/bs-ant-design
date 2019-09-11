@@ -8,7 +8,6 @@
 // value	Display value	string | number	-
 // valueStyle	Set value css style	style	-
 
-[%bs.raw {|require("antd/lib/statistic/style")|}];
 
 [@bs.obj]
 external makePropsStatistic:

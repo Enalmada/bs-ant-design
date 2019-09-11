@@ -1,6 +1,5 @@
 [@bs.module] external reactClass: ReasonReact.reactClass = "antd/lib/steps";
 
-[%bs.raw {|require("antd/lib/steps/style")|}];
 
 [@bs.deriving jsConverter]
 type status = [ | `wait | `process | `finish | `error];

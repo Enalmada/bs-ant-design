@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/form/style")|}];
 
 [@bs.deriving jsConverter]
 type formLayout = [ | `horizontal | `inline | `vertical];

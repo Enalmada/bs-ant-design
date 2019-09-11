@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/pagination/style")|}];
 
 [@bs.obj]
 external makePropsPagination:

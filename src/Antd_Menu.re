@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/menu/style")|}];
 
 [@bs.deriving jsConverter]
 type theme = [ | `light | `dark];

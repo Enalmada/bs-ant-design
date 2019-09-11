@@ -26,7 +26,6 @@
  onConfirm	callback of confirmation	function(e)	-
  icon	customize icon of confirmation	ReactNode	<Icon type="exclamation-circle" />
   */
-[%bs.raw {|require("antd/lib/popconfirm/style")|}];
 
 [@bs.deriving jsConverter]
 type placementType = [

@@ -5,7 +5,6 @@
  onChange	Callback for when affix state is changed	Function(affixed)	-
  */
 
-[%bs.raw {|require("antd/lib/affix/style")|}];
 [@bs.module] [@react.component]
 external make:
   (

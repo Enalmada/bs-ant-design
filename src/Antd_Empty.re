@@ -2,7 +2,6 @@
 // imageStyle	style of image	CSSProperties	-
 // image	Customize image. Will tread as image url when string provided.	string | ReactNode	Empty.PRESENTED_IMAGE_DEFAULT
 
-[%bs.raw {|require("antd/lib/empty/style")|}];
 
 [@bs.obj]
 external makePropsEmpty:

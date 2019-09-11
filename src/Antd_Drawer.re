@@ -16,7 +16,6 @@
 // onClose	Specify a callback that will be called when a user clicks mask, close button or Cancel button.	function(e)	-
 // afterVisibleChange	Callback after the animation ends when switching drawers.	function(visible)	-
 
-[%bs.raw {|require("antd/lib/drawer/style")|}];
 
 [@bs.deriving jsConverter]
 type placement = [ | `top | `right | `bottom | `left];

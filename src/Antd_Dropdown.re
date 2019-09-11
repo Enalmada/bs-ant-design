@@ -9,7 +9,6 @@
  visible	whether the dropdown menu is visible	boolean	-
  onVisibleChange	a callback function takes an argument: visible, is executed when the visible state is changed	Function(visible)
  */
-[%bs.raw {|require("antd/lib/dropdown/style")|}];
 
 module Menu = Antd_Menu;
 module IconName = Antd_IconName;

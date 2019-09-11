@@ -16,7 +16,6 @@
  onKeyDown	callback when keydown on component	Function(event)
  */
 
-[%bs.raw {|require("antd/lib/rate/style")|}];
 [@bs.obj]
 external makePropsRate:
   (

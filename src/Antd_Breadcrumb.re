@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/breadcrumb/style")|}];
 
 type route = {
   .

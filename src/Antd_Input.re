@@ -14,7 +14,6 @@
  onPressEnter	The callback function that is triggered when Enter key is pressed.	function(e)
 
  */
-[%bs.raw {|require("antd/lib/input/style")|}];
 
 [@bs.deriving jsConverter]
 type size = [ | `large | `default | `small];

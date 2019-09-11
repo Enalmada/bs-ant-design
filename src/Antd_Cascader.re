@@ -23,7 +23,6 @@
 // onChange	callback when finishing cascader select	(value, selectedOptions) => void	-
 // onPopupVisibleChange	callback when popup shown or hidden	(value) => void	-
 
-[%bs.raw {|require("antd/lib/cascader/style")|}];
 
 [@bs.deriving jsConverter]
 type trigger = [ | `click | `hover];

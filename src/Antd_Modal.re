@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/modal/style")|}];
 
 /*
  afterClose	Specify a function that will be called when modal is closed completely.	function	-

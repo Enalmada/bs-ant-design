@@ -1,6 +1,5 @@
 [@bs.module "antd/lib/message"] [@react.component]
 external message: React.element = "default";
-[%bs.raw {|require("antd/lib/message/style")|}];
 type content = React.element;
 type duration = int;
 type options;

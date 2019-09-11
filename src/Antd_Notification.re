@@ -9,7 +9,6 @@
  notification.destroy()
  */
 
-[%bs.raw {|require("antd/lib/notification/style")|}];
 
 type stringOrNode;
 [@bs.deriving abstract]

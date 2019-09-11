@@ -8,7 +8,6 @@
  text	If status is set, text sets the display text of the status dot	string	''
  title	Text to show when hovering over the badge	string	count
   */
-[%bs.raw {|require("antd/lib/badge/style")|}];
 
 [@bs.deriving jsConverter]
 type status = [ | `success | `processing | `default | `error | `warning];

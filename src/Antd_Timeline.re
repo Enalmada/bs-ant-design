@@ -1,6 +1,5 @@
 [@bs.module] external reactClass: ReasonReact.reactClass = "antd/lib/timeline";
 
-[%bs.raw {|require("antd/lib/timeline/style")|}];
 
 [@bs.deriving jsConverter]
 type modeType = [ | `left | `alternate | `right];

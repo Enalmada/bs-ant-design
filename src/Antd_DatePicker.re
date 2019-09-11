@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/date-picker/style")|}];
 
 [@bs.deriving jsConverter]
 type rangePickerMode = [ | `time | `date | `month | `year | `decade];
@@ -259,7 +258,6 @@ module WeekPicker = {
 /*
  [@bs.module] external reactClass: ReasonReact.reactClass = "antd/lib/date-picker";
 
- [%bs.raw {|require("antd/lib/date-picker/style")|}];
 
 
   COMMON

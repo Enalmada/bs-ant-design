@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/radio/style")|}];
 
 [@bs.obj]
 external makePropsRadio:

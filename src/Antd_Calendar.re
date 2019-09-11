@@ -14,7 +14,6 @@
  onSelect	Callback for when a date is selected	function(date: moment?	-
  onChange	Callback for when date changes	function(date: moment?	-
    */
-[%bs.raw {|require("antd/lib/calendar/style")|}];
 module Locale = Antd_DatePicker.Locale;
 
 [@bs.deriving jsConverter]

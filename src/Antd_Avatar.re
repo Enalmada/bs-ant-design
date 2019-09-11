@@ -6,7 +6,6 @@
  alt	This attribute defines the alternative text describing the image	string	-
  onError	handler when img load error?return false to prevent default fallback behavior	() => boolean	-
  */
-[%bs.raw {|require("antd/lib/avatar/style")|}];
 module IconName = Antd_IconName;
 
 [@bs.deriving jsConverter]

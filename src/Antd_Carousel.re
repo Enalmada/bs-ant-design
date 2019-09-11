@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/carousel/style")|}];
 
 [@bs.deriving jsConverter]
 type effect = [ | `scrollx | `fade];

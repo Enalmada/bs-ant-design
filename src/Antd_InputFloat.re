@@ -12,7 +12,6 @@
  value	current value	number
  onChange	The callback triggered when the value is changed.	function(value: number | string)
  */
-[%bs.raw {|require("antd/lib/input-number/style")|}];
 
 [@bs.module] [@react.component]
 external make:

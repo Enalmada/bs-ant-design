@@ -14,7 +14,6 @@
  key	Unique key identifying the panel from among its siblings	string	-
  showArrow	If false, panel will not show arrow icon	boolean	true
   */
-[%bs.raw {|require("antd/lib/collapse/style")|}];
 
 type panelProps = {
   .

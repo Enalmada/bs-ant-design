@@ -10,7 +10,6 @@
  type	Type of Alert styles, options: success, info, warning, error	string	info, in banner mode default is warning
  onClose	Callback when Alert is closed	(e: MouseEvent) => void	-
     */
-[%bs.raw {|require("antd/lib/alert/style")|}];
 
 [@bs.deriving jsConverter]
 type alertType = [ | `success | `info | `warning | `error];

@@ -1,4 +1,3 @@
-[%bs.raw {| require("antd/lib/typography/style")|}];
 
 [@bs.deriving jsConverter]
 type contentType = [ | `secondary | `warning | `danger];

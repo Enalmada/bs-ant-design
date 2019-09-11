@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/tree-select/style")|}];
 
 [@bs.deriving jsConverter]
 type size = [ | `large | `default | `small];
