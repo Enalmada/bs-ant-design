@@ -38,6 +38,7 @@ external makePropsTreeSelect:
     ~onSearch: string => unit=?,
     ~onSelect: (string, React.element) => unit=?,
     ~onTreeExpand: list(string) => unit=?,
+    ~getPopupContainer: Dom.htmlElement => Dom.htmlElement=?,
     ~children: React.element=?,
     unit
   ) =>
@@ -81,6 +82,7 @@ let make =
       ~onSearch: option(string => unit)=?,
       ~onSelect: option((string, React.element) => unit)=?,
       ~onTreeExpand: option(list(string) => unit)=?,
+      ~getPopupContainer: option(Dom.htmlElement => Dom.htmlElement)=?,
       ~children: option(React.element)=?,
     ) =>
   React.createElement(
@@ -118,6 +120,7 @@ let make =
       ~onSelect?,
       ~onTreeExpand?,
       ~children?,
+      ~getPopupContainer?
       (),
     ),
   );

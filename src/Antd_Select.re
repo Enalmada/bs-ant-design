@@ -79,6 +79,7 @@ external makePropsSelect:
     ~className: string=?,
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
+    ~getPopupContainer: Dom.htmlElement => Dom.htmlElement=?,
     unit
   ) =>
   _ =
@@ -118,6 +119,7 @@ let make =
       ~className: option(string)=?,
       ~style: option(ReactDOMRe.Style.t)=?,
       ~children: option(React.element)=?,
+      ~getPopupContainer: option(Dom.htmlElement => Dom.htmlElement)=?,
     ) =>
   React.createElement(
     reactComponent,
@@ -151,6 +153,7 @@ let make =
       ~className?,
       ~style?,
       ~children?,
+      ~getPopupContainer?,
       (),
     ),
   );
