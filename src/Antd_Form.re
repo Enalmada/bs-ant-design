@@ -19,7 +19,7 @@ external makePropsForm:
     ~hideRequiredMark: bool=?,
     ~wrapperCol: Antd_Grid.Col.props=?,
     ~colon: bool=?,
-    ~children: React.element,
+    ~children: React.element=?,
     unit
   ) =>
   _ =
@@ -40,7 +40,7 @@ let make =
       ~hideRequiredMark: option(bool)=?,
       ~wrapperCol: option(Antd_Grid.Col.props)=?,
       ~colon: option(bool)=?,
-      ~children: React.element=?,
+      ~children: option(React.element)=?,
     ) =>
   React.createElement(
     reactComponent,
@@ -59,7 +59,7 @@ let make =
       ~hideRequiredMark?,
       ~wrapperCol?,
       ~colon?,
-      ~children,
+      ~children?,
       (),
     ),
   );
@@ -85,7 +85,7 @@ module Item = {
       ~required: bool=?,
       ~style: ReactDOMRe.Style.t=?,
       ~colon: bool=?,
-      ~children: React.element
+      ~children: React.element=?
     ) =>
     _ =
     "";
@@ -110,7 +110,7 @@ module Item = {
         ~required: option(bool)=?,
         ~style: option(ReactDOMRe.Style.t)=?,
         ~colon: option(bool)=?,
-        ~children: React.element=?,
+        ~children: option(React.element)=?,
       ) =>
     React.createElement(
       reactComponent,
@@ -129,7 +129,7 @@ module Item = {
         ~required?,
         ~style?,
         ~colon?,
-        ~children,
+        ~children?,
       ),
     );
 };
