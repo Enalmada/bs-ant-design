@@ -8,7 +8,6 @@
    successPercent	segmented success percent	number	0
    */
 
-[%bs.raw {|require("antd/lib/progress/style")|}];
 
 [@bs.deriving jsConverter]
 type mode = [ | `line | `dashboard | `circle];

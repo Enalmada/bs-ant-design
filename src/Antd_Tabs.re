@@ -31,7 +31,6 @@
    </Tabs>
  */
 
-[%bs.raw {|require("antd/lib/tabs/style")|}];
 
 [@bs.obj]
 external makePropsTabs:

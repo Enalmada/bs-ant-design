@@ -52,7 +52,6 @@
  }
  */
 
-[%bs.raw {|require("antd/lib/table/style")|}];
 
 [@bs.deriving jsConverter]
 type sizeType = [ | `default | `middle | `small];

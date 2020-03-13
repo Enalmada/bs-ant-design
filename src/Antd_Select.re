@@ -37,7 +37,6 @@
  open	Controlled open state of dropdown	boolean	-
  onDropdownVisibleChange	Call when dropdown open	function(open)	-
   */
-[%bs.raw {|require("antd/lib/select/style")|}];
 
 [@bs.deriving jsConverter]
 type mode = [ | `default | `multiple | `tags];

@@ -14,7 +14,6 @@
  type	Card style type, can be set to inner or not set	string	-
  onTabChange	Callback when tab is switched	(key) => void	-
  */
-[%bs.raw {|require("antd/lib/card/style")|}];
 type tab = {
   .
   "key": string,

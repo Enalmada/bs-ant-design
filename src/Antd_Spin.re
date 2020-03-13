@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/spin/style")|}];
 
 [@bs.deriving jsConverter]
 type size = [ | `default | `small | `large];

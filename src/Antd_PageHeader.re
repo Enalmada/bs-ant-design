@@ -7,7 +7,6 @@
 // footer	PageHeader's footer, generally used to render TabBar	ReactNode	-
 // onBack	back icon click event	()=>void	()=>history.back()
 
-[%bs.raw {|require("antd/lib/page-header/style")|}];
 
 let breadcrumbConfig = routes => {"routes": routes};
 

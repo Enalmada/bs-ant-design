@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/divider/style")|}];
 [@bs.deriving jsConverter]
 type dividerType = [ | `horizontal | `vertical];
 

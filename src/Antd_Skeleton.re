@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/skeleton/style")|}];
 
 /*
  size	Set the size of avatar	Enum{ 'large', 'small', 'default' }	-

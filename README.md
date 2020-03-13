@@ -27,30 +27,9 @@ yarn add bs-ant-design-alt
 ```
 
 * Add `bs-ant-design-alt` to `bs-dependencies` in `bsconfig.json`.
-* You also need to set up your bundler to handle less files (This is a requirement from ant-design)
 
-For webpack, you can do this:
-
-```
-npm install --save-dev less@^2.7.3 less-loader css-loader style-loader
-```
-
-(`less@^2.7.3` is the important bit)
-
-Now add this to your webpack config:
-
-```js
-// webpack.config.js
-module.exports = {
-    ...
-    module: {
-        rules: [{
-        test: /\.less$/,
-        use: ["style-loader", "css-loader", "less-loader"]
-    }]
-}
-};
-```
+**THIS LIBRARY ONLY INCLUDES THE BINDINGS FOR ANT DESIGN, NOT THE STYLE**.
+You'll have to include the Ant Design CSS in your project yourself. We've included the compiled and minified CSS that Ant Design publishes to CDN JS in this file for your convenience. It's in the "vendor" directory. You can require that using a bundler, if you like. Or you can load the CSS on your html page from the CDN directly! Just make sure the version you load correlates with the version of ant-design that this package uses.
 
 ## Usage
 

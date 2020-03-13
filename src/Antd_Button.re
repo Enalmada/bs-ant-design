@@ -1,6 +1,5 @@
 module IconName = Antd_IconName;
 
-[%bs.raw {|require("antd/lib/button/style")|}];
 
 [@bs.deriving jsConverter]
 type buttonType = [

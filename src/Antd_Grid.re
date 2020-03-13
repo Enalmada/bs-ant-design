@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/grid/style")|}];
 
 module Row = {
   [@bs.deriving jsConverter]

@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/tag/style")|}];
 
 /*
  afterClose	Callback executed when close animation is completed	() => void	-

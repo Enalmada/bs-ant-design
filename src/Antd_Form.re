@@ -1,5 +1,3 @@
-[%bs.raw {|require("antd/lib/form/style")|}];
-
 [@bs.deriving jsConverter]
 type formLayout = [ | `horizontal | `inline | `vertical];
 
@@ -22,8 +20,7 @@ external makePropsForm:
     ~children: React.element=?,
     unit
   ) =>
-  _ =
-  "";
+  _;
 
 [@bs.module] external reactComponent: React.component('a) = "antd/lib/form";
 
@@ -87,8 +84,7 @@ module Item = {
       ~colon: bool=?,
       ~children: React.element=?
     ) =>
-    _ =
-    "";
+    _;
 
   [@bs.module]
   external reactComponent: React.component('a) = "antd/lib/form/FormItem";

@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/locale-provider/style")|}];
 
 module Locale = {
   module Table = {

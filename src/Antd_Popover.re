@@ -22,7 +22,6 @@
  title	Title of the card	string|ReactNode	-
  */
 
-[%bs.raw {|require("antd/lib/popover/style")|}];
 
 [@bs.deriving jsConverter]
 type placementType = [

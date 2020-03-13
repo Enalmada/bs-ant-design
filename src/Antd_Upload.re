@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/upload/style")|}];
 
 [@bs.deriving jsConverter]
 type listType = [ | `text | `picture | [@bs.as "picture-card"] `pictureCard];

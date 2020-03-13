@@ -21,7 +21,6 @@
  title	Title of the card	string|ReactNode	-
  */
 
-[%bs.raw {|require("antd/lib/tooltip/style")|}];
 
 [@bs.deriving jsConverter]
 type placementType = [

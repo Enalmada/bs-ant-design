@@ -1,4 +1,3 @@
-[%bs.raw {|require("antd/lib/list/style")|}];
 
 [@bs.deriving jsConverter]
 type position = [ | `top | `bottom | `both];

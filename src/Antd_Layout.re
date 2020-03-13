@@ -1,5 +1,4 @@
 /* last checked v3.10 */
-[%bs.raw {|require("antd/lib/layout/style")|}];
 
 [@bs.obj]
 external makePropsLayout:

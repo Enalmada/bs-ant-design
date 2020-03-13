@@ -6,7 +6,6 @@
  indeterminate	indeterminate checked state of checkbox	boolean	false
  onChange	The callback function that is triggered when the state changes.	Function(e:Event)
  */
-[%bs.raw {|require("antd/lib/checkbox/style")|}];
 [@bs.module] [@react.component]
 external make:
   (
